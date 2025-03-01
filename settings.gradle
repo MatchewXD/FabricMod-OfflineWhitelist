@@ -1,0 +1,11 @@
+pluginManagement {
+	repositories {
+		// Fabric repository for modding dependencies
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		mavenCentral()        // Standard repository for Java dependencies
+		gradlePluginPortal()  // Gradle's official plugin repository
+	}
+}

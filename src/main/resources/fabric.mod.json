@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "offlinewhitelist",
+	"version": "${version}",
+	"name": "OfflineWhitelist",
+	"description": "A Fabric mod that manages offline player whitelisting.",
+	"authors": [
+		"matchewxd"
+	],
+	"contact": {
+		"homepage": "https://github.com/matchewxd",
+		"sources": "https://github.com/matchewxd/offlinewhitelist"
+	},
+	"license": "MIT",
+	"icon": "assets/offlinewhitelist/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.matchewxd.offlinewhitelist.OfflineWhitelist"
+		],
+		"fabric-datagen": [
+			"net.matchewxd.offlinewhitelist.OfflineWhitelistDataGenerator"
+		]
+	},
+	"mixins": [
+		"offlinewhitelist.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
